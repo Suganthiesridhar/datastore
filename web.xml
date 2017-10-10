@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Gdatastore</servlet-name>
+		<servlet-class>com.gooapp.Gdatastore.GdatastoreServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Gdatastore</servlet-name>
+		<url-pattern>/gdatastore</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.gooapp.Gdatastore.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>register.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.gooapp.Gdatastore.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Update</servlet-name>
+		<servlet-class>com.gooapp.Gdatastore.Update</servlet-class> 
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<url-pattern>/Update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Showpersons</servlet-name>
+		<servlet-class>com.gooapp.Gdatastore.Showpersons</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Showpersons</servlet-name>
+		<url-pattern>/Showpersons</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.gooapp.Gdatastore.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<sessions-enabled>true</sessions-enabled>
+</web-app>
